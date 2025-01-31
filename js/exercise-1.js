@@ -1,5 +1,6 @@
 function getHotelPrice(country, nights) {
   let pricePerNight;
+  
   switch (country) {
     case 'USA':
       pricePerNight = 200;
@@ -20,6 +21,7 @@ function getHotelPrice(country, nights) {
     default:
       return `Sorry, we have no hotels in ${country}.`;
   }
+
   const totalPrice = nights * pricePerNight;
   return `The total cost of staying in ${country} for ${nights} nights is ${totalPrice} credits.`;
 }
