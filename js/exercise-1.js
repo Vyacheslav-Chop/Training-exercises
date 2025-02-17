@@ -42,3 +42,8 @@ console.log(getHotelPrice('USA', 3)); // "The total cost of staying in USA for 3
 console.log(getHotelPrice('Japan', 5)); // "The total cost of staying in Japan for 5 nights is 1250 credits"
 console.log(getHotelPrice('India', 2)); // "The total cost of staying in India for 2 nights is 180 credits"
 console.log(getHotelPrice('Brazil', 4)); // "Sorry, we have no hotels in Brazil"
+
+
+// console.log('prompt()', prompt('Введіть число'));
+// console.log('alert()', alert('Hello'));
+// console.log('confirm()', confirm());

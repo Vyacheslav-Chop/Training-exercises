@@ -66,3 +66,4 @@ console.log(calculateFoodCost('Sushi', 2, '50')); // "Food purchase confirmed! T
 console.log(calculateFoodCost('Pasta', 5, 'abc')); // "Both quantity and budget must be valid numbers."
 console.log(calculateFoodCost('Salad', 10, 30)); // "Sorry, you need 10 more credits to purchase 10 Salad(s)."
 console.log(calculateFoodCost('Ice Cream', 2, 20)); // "Sorry, we don't sell Ice Cream."
+
