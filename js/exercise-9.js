@@ -27,45 +27,106 @@
 // Наймолодший: Іван (25 років)
 // Найстарший: Марія (30 років)
 
-const users = [];
+// const users = [];
 
-do {
-  const name = prompt("Введіть ім'я");
-  if (name === null || name.trim() === '') {
-    break;
-  }
+// do {
+//   const name = prompt("Введіть ім'я");
+//   if (name === null || name.trim() === '') {
+//     break;
+//   }
 
-  const age = prompt('Введіть вік');
-  if (isNaN(Number(age)) || age === null || age.trim() === '') {
-    alert('Введіть коректно вік');
-    continue;
-  }
+//   const age = prompt('Введіть вік');
+//   if (isNaN(Number(age)) || age === null || age.trim() === '') {
+//     alert('Введіть коректно вік');
+//     continue;
+//   }
 
-  users.push({ name, age: Number(age) });
+//   users.push({ name, age: Number(age) });
 
-} while (true);
+// } while (true);
 
-if (users.length === 0) {
-  console.log("Не введено жодного ім'я.");
+// if (users.length === 0) {
+//   console.log("Не введено жодного ім'я.");
   
-}
+// }
 
-for (const user of users) {
-  console.log(`Ім'я: ${user.name}, Вік: ${user.age}`);
-  }
+// for (const user of users) {
+//   console.log(`Ім'я: ${user.name}, Вік: ${user.age}`);
+//   }
 
-let youngest = users[0];
-let oldest = users[0];
+// let youngest = users[0];
+// let oldest = users[0];
 
-for (let i = 1; i < users.length; i++) {
-  if (users[i].age < youngest.age) {
-     youngest = users[i];
-  }
-  if (users[i].age > oldest.age) {
-    oldest = users[i];
-  } 
+// for (let i = 1; i < users.length; i++) {
+//   if (users[i].age < youngest.age) {
+//      youngest = users[i];
+//   }
+//   if (users[i].age > oldest.age) {
+//     oldest = users[i];
+//   }
 
-console.log(`Наймолодший: ${youngest.name} - ${youngest.age} років`);
-console.log(`Найстарший: ${oldest.name} - ${oldest.age} років`);
+// console.log(`Наймолодший: ${youngest.name} - ${youngest.age} років`);
+// console.log(`Найстарший: ${oldest.name} - ${oldest.age} років`);
 
-}
+// }
+
+
+
+
+
+
+// Задача:
+// Напишіть програму, яка:
+
+// Запитує у користувача 5 чисел (можна використовувати prompt).
+// Перевіряє, чи введені значення є числами (за допомогою isNaN).
+// Виводить в консоль суму всіх введених чисел.
+// Якщо хоча б одне введене значення не є числом, виводить в консоль повідомлення "Ви ввели не число".
+// Підказки:
+// Використовуйте цикл for або do...while.
+// Перевірку на число зробіть через isNaN().
+// Для коректного підрахунку суми треба перевести введені значення до чисел (наприклад, за допомогою Number()).
+
+// function sumNumbers() {
+//   let sum = 0;
+//   for (let i = 0; i < 5; i++) {
+//     const input = prompt('Введіть число:');
+   
+//     if (isNaN(input) || input.trim() === '') {
+//       console.log('Ви ввели не число');
+//       return;
+//     }
+
+//     sum += Number(input);
+//   }
+
+//   console.log(`Сума введених чисел: ${sum}`);
+// }
+
+// sumNumbers();
+
+
+
+
+// Задача:
+
+// Напишіть функцію filterEvenNumbers(arr), яка приймає масив чисел і повертає новий масив, що містить лише парні числа з цього масиву.
+
+// Масив чисел:
+// const numbers = [3, 12, 5, 8, 10, 15, 18];
+// Виведення в консоль:
+// console.log(filterEvenNumbers(numbers)); // [12, 8, 10, 18]
+// Тобто, в консолі буде виведено новий масив, що містить лише парні числа з початкового масиву.
+
+// function filterEvenNumbers(arr) {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       newArr.push(arr[i]);
+//     };    
+//   }
+//   return newArr;
+// }
+
+// const numbers = [3, 12, 5, 8, 10, 15, 18];
+// console.log(filterEvenNumbers(numbers));
